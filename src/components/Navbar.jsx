@@ -94,7 +94,16 @@ const Navbar = () => {
           </div>
 
           {/* Action CTA */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-2.5">
+            <a
+              href={personalInfo.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold rounded-lg bg-slate-900 border border-slate-700 text-slate-200 hover:text-white hover:border-teal-400 hover:bg-slate-800 transition-all hover:-translate-y-0.5"
+            >
+              <Download className="w-3.5 h-3.5 text-teal-400" />
+              <span>Resume</span>
+            </a>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-lg bg-gradient-to-r from-teal-500 to-cyan-500 text-slate-950 hover:from-teal-400 hover:to-cyan-400 transition-all shadow-md shadow-teal-500/25 hover:shadow-teal-500/40 hover:-translate-y-0.5"
@@ -130,7 +139,17 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <div className="pt-2 border-t border-slate-800">
+          <div className="pt-3 border-t border-slate-800 flex flex-col gap-2">
+            <a
+              href={personalInfo.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="flex items-center justify-center gap-2 w-full px-4 py-2.5 text-sm font-semibold rounded-lg bg-slate-900 border border-slate-700 text-slate-200"
+            >
+              <Download className="w-4 h-4 text-teal-400" />
+              <span>View Resume (PDF)</span>
+            </a>
             <a
               href="#contact"
               onClick={() => setIsOpen(false)}

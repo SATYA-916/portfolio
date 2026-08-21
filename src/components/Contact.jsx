@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
   Mail,
-  Phone,
   MapPin,
   Send,
   Copy,
@@ -68,7 +67,7 @@ const Contact = () => {
                 Contact Information
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed">
-                Feel free to contact me via email, phone, or connect on LinkedIn and GitHub. I respond quickly.
+                Feel free to contact me via email or connect on LinkedIn and GitHub. I respond quickly.
               </p>
 
               {/* Email item */}
@@ -96,20 +95,28 @@ const Contact = () => {
                 </button>
               </div>
 
-              {/* Phone item */}
-              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
-                <div className="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 flex-shrink-0">
-                  <Phone className="w-4 h-4" />
+              {/* Resume item */}
+              <div className="flex items-center justify-between p-3.5 rounded-xl bg-slate-900/90 border border-slate-800">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 flex-shrink-0">
+                    <Sparkles className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-[11px] text-slate-400 block">Curriculum Vitae</span>
+                    <span className="text-xs sm:text-sm font-medium text-slate-200">
+                      Satya Sampath Kumar.pdf
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  <span className="text-[11px] text-slate-400 block">Direct Phone</span>
-                  <a
-                    href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`}
-                    className="text-xs sm:text-sm font-medium text-slate-200 hover:text-cyan-300 transition-colors"
-                  >
-                    {personalInfo.phone}
-                  </a>
-                </div>
+                <a
+                  href={personalInfo.resumeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 rounded-lg bg-teal-500/10 border border-teal-500/30 text-teal-300 hover:bg-teal-500/20 text-xs font-semibold flex items-center gap-1.5 transition-colors"
+                >
+                  <span>View</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
 
               {/* Location item */}

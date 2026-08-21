@@ -84,7 +84,7 @@ const Hero = () => {
           </p>
 
           {/* Primary Action Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
+          <div className="flex flex-wrap items-center justify-center gap-3.5 mb-12">
             <a
               href="#projects"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-teal-500 to-cyan-500 text-slate-950 font-semibold text-sm hover:from-teal-400 hover:to-cyan-400 transition-all shadow-lg shadow-teal-500/25 hover:shadow-teal-500/40 hover:-translate-y-0.5"
@@ -94,19 +94,29 @@ const Hero = () => {
             </a>
 
             <a
-              href="#experience"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-slate-200 font-semibold text-sm hover:bg-slate-800 hover:border-slate-600 transition-all backdrop-blur-md hover:-translate-y-0.5"
+              href={personalInfo.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900/90 border border-teal-500/40 text-teal-300 font-semibold text-sm hover:bg-teal-500/10 hover:border-teal-400 transition-all backdrop-blur-md hover:-translate-y-0.5 shadow-md shadow-teal-500/5"
             >
-              <Layers className="w-4 h-4 text-teal-400" />
-              <span>Internships & Experience</span>
+              <Download className="w-4 h-4 text-teal-400" />
+              <span>Resume (PDF)</span>
+            </a>
+
+            <a
+              href="#experience"
+              className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-slate-200 font-semibold text-sm hover:bg-slate-800 hover:border-slate-600 transition-all backdrop-blur-md hover:-translate-y-0.5"
+            >
+              <Layers className="w-4 h-4 text-slate-400" />
+              <span>Experience</span>
             </a>
 
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-teal-950/40 border border-teal-500/30 text-teal-300 font-semibold text-sm hover:bg-teal-900/40 hover:border-teal-400/50 transition-all hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-slate-900/60 border border-slate-800 text-slate-300 font-semibold text-sm hover:bg-slate-800 hover:text-white transition-all hover:-translate-y-0.5"
             >
-              <Mail className="w-4 h-4" />
-              <span>Contact Me</span>
+              <Mail className="w-4 h-4 text-slate-400" />
+              <span>Contact</span>
             </a>
           </div>
 

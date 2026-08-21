@@ -9,7 +9,7 @@ export const personalInfo = {
   tagline: "Building resilient full-stack applications, intelligent AI pipelines, and intuitive user experiences.",
   summary: "Computer Science Engineering student with hands-on experience building full-stack web applications and automation solutions using React, Node.js, Express.js, and MongoDB. Experienced in developing AI-powered data pipelines, REST API integrations, and automated email workflows, including Retrieval-Augmented Generation (RAG) systems with ChromaDB and Ollama. Bridging the gap between Figma design systems and production-ready code.",
   email: "satyasampath79@gmail.com",
-  phone: "+91 9550736570",
+  resumeUrl: "/Satya%20Sampath%20Kumar.pdf",
   location: "Visakhapatnam, India",
   socials: {
     github: "https://github.com/SATYA-916",
