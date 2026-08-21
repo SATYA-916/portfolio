@@ -58,7 +58,7 @@ const Hero = () => {
           {/* Status Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-teal-500/30 text-teal-300 text-xs font-medium mb-8 backdrop-blur-md shadow-lg shadow-teal-500/5">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-            <span>Available for Full Stack & AI Engineering Opportunities</span>
+            <span>Available for Web Product Design & UI/UX Internships</span>
           </div>
 
           {/* Greeting & Name */}

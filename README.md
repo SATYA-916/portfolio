@@ -1,6 +1,8 @@
-# ⚡ K. Satya Sampath Kumar — Developer Portfolio
+# ⚡ K. Satya Sampath Kumar — Web Product Designer & Developer Portfolio
 
 A modern, responsive, high-performance portfolio website built with **React 19**, **Vite**, and **Tailwind CSS**. Optimized for rapid deployment on **Vercel** with full zero-configuration support.
+
+Tailored for **Web Product Design**, **Figma Design Systems**, **UI/UX Engineering**, and **Conversion-Driven Web Development**.
 
 ---
 
@@ -12,43 +14,12 @@ A modern, responsive, high-performance portfolio website built with **React 19**
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Core Capabilities
 
-- **Framework:** React 19 + Vite
-- **Styling:** Tailwind CSS 3
-- **Icons:** Lucide React + Custom SVG Brand Icons
-- **Design:** Dark glassmorphism, responsive grid layout, micro-interactions
-
----
-
-## 📂 Project Structure
-
-```text
-portoflio/
-├── public/               # Static assets & favicon
-├── src/
-│   ├── components/       # UI sections
-│   │   ├── Navbar.jsx    # Sticky navigation with active scroll tracking
-│   │   ├── Hero.jsx      # Animated role cycler, stats, CTA buttons
-│   │   ├── About.jsx     # Professional summary, code card, 4 core pillars
-│   │   ├── Skills.jsx    # Categorized skill pills with filter tabs
-│   │   ├── Experience.jsx# Internship timeline (SLS Nexus, Infosys Springboard)
-│   │   ├── Projects.jsx  # Featured project cards with Live Demo & GitHub links
-│   │   ├── Education.jsx # GITAM B.Tech (CGPA 8.2), Hackathons & NSS
-│   │   ├── Contact.jsx   # Direct mailto contact form & clipboard email copy
-│   │   ├── Footer.jsx    # Quick links, social icons, back-to-top button
-│   │   └── Icons.jsx     # Custom vector SVG icons
-│   ├── data/
-│   │   └── portfolioData.js # Single source of truth for all personal details
-│   ├── App.jsx           # Main application shell
-│   ├── main.jsx          # React DOM root entry
-│   └── index.css         # Tailwind & custom glassmorphism styles
-├── index.html            # Meta tags & fonts
-├── package.json          # Scripts & dependencies
-├── tailwind.config.js    # Dark theme configuration
-├── postcss.config.js     # PostCSS setup
-└── vite.config.js        # Vite build configuration
-```
+- **UI/UX & Product Design:** Figma (Wireframing, Prototyping, Component Tokens, Design Systems), User Research, Storyboarding, Usability QA
+- **Frontend & Web Experience:** React 19, Tailwind CSS, Semantic HTML5, CSS Flexbox/Grid, Asset Optimization, Cross-Browser Compatibility
+- **Conversion & Growth UX:** Lead capture workflows, Friction reduction, Admin triage dashboards, Stakeholder presentation
+- **Backend & Data Integration:** Node.js, Express.js, REST APIs, MongoDB, Brevo Email Automation
 
 ---
 
@@ -78,19 +49,8 @@ portoflio/
 
 ## 🌐 Deploy to Vercel via GitHub
 
-Run the following commands in your terminal:
-
 ```bash
-git init
 git add .
-git commit -m "feat: initial release of developer portfolio website"
-git branch -M main
-git remote add origin https://github.com/SATYA-916/portfolio.git
+git commit -m "feat: optimize portfolio for Web Product Design internship"
 git push -u origin main
 ```
-
-### Import into Vercel:
-1. Go to [Vercel](https://vercel.com/) and click **"Add New Project"**.
-2. Select your `portfolio` repository from GitHub.
-3. Vercel will automatically detect **Vite** as the framework with build command `npm run build` and output directory `dist`.
-4. Click **Deploy**! 🚀

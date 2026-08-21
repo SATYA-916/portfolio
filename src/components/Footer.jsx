@@ -31,7 +31,7 @@ const Footer = () => {
                 {personalInfo.name}
               </span>
               <span className="text-[11px] text-slate-500 font-mono">
-                Software Engineer — MERN & AI Automation
+                Web Product Designer & UI/UX Developer
               </span>
             </div>
           </div>

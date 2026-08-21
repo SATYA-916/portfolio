@@ -1,13 +1,13 @@
 export const personalInfo = {
   name: "K. Satya Sampath Kumar",
   roles: [
-    "Full Stack Developer (MERN)",
-    "AI & RAG Pipeline Engineer",
-    "UI/UX & Web Product Designer",
-    "Automation & API Specialist"
+    "Web Product Designer",
+    "UI/UX & Design Systems Specialist",
+    "Design-to-Code Frontend Engineer",
+    "Full-Stack Web Developer"
   ],
-  tagline: "Building resilient full-stack applications, intelligent AI pipelines, and intuitive user experiences.",
-  summary: "Computer Science Engineering student with hands-on experience building full-stack web applications and automation solutions using React, Node.js, Express.js, and MongoDB. Experienced in developing AI-powered data pipelines, REST API integrations, and automated email workflows, including Retrieval-Augmented Generation (RAG) systems with ChromaDB and Ollama. Bridging the gap between Figma design systems and production-ready code.",
+  tagline: "Designing high-conversion web experiences, scalable Figma design systems, and bridging design to production code.",
+  summary: "Computer Science student and Web Product Designer who designs and builds end-to-end web experiences — from user research, Figma wireframes, and client-facing prototypes to responsive, production-ready UI. Delivered a client website redesign with mockups presented and approved before development, optimized lead capture and triage flows, and consistently bridges the gap between design tools (Figma) and code (React, Tailwind CSS) for zero-friction handoff.",
   email: "satyasampath79@gmail.com",
   resumeUrl: "/Satya%20Sampath%20Kumar.pdf",
   location: "Visakhapatnam, India",
@@ -18,108 +18,127 @@ export const personalInfo = {
     email: "mailto:satyasampath79@gmail.com"
   },
   stats: [
-    { label: "Projects Built", value: "6+" },
-    { label: "Internships Completed", value: "2" },
-    { label: "B.Tech CGPA", value: "8.2" },
-    { label: "Core Stack", value: "MERN + AI" }
+    { label: "Figma to Code", value: "100%" },
+    { label: "Design Systems & Web", value: "6+ Projects" },
+    { label: "Client & AI Internships", value: "2" },
+    { label: "B.Tech CGPA", value: "8.2" }
   ]
 };
 
 export const skillsData = {
-  languages: [
-    { name: "JavaScript (ES6+)", level: "Advanced" },
-    { name: "Python", level: "Intermediate" },
-    { name: "HTML5 & CSS3", level: "Advanced" },
-    { name: "SQL", level: "Intermediate" }
+  design: [
+    { name: "Figma (Wireframing & Prototyping)", level: "Advanced" },
+    { name: "UI Design & Visual Hierarchy", level: "Advanced" },
+    { name: "Design Systems & Token Reuse", level: "Advanced" },
+    { name: "Responsive & Fluid Layouts", level: "Advanced" },
+    { name: "User Research & Testing", level: "Intermediate" },
+    { name: "Interaction Specs & Storyboarding", level: "Intermediate" },
+    { name: "Cross-Browser QA", level: "Advanced" }
   ],
   frontend: [
     { name: "React.js", level: "Advanced" },
     { name: "Tailwind CSS", level: "Advanced" },
-    { name: "Responsive UI/UX", level: "Advanced" },
-    { name: "Streamlit", level: "Intermediate" },
-    { name: "State Management", level: "Intermediate" }
+    { name: "HTML5 & Semantic Web", level: "Advanced" },
+    { name: "Modern CSS / Flex / Grid", level: "Advanced" },
+    { name: "JavaScript (ES6+)", level: "Advanced" },
+    { name: "Web Asset Optimization", level: "Advanced" }
   ],
-  backend: [
-    { name: "Node.js", level: "Advanced" },
-    { name: "Express.js", level: "Advanced" },
-    { name: "REST APIs", level: "Advanced" },
-    { name: "WebSockets & Socket.IO", level: "Intermediate" },
-    { name: "JWT Authentication", level: "Intermediate" }
+  productMarketing: [
+    { name: "Lead Capture Optimization", level: "Advanced" },
+    { name: "UX Writing & Copy", level: "Advanced" },
+    { name: "Admin Triage Dashboards", level: "Advanced" },
+    { name: "Client / Stakeholder Demos", level: "Advanced" },
+    { name: "Competitor UI Benchmarking", level: "Intermediate" }
   ],
-  aiGenAi: [
-    { name: "RAG Pipelines", level: "Advanced" },
-    { name: "Vector Embeddings", level: "Advanced" },
-    { name: "ChromaDB", level: "Intermediate" },
-    { name: "Ollama (nomic-embed)", level: "Intermediate" },
-    { name: "Google Gemini AI API", level: "Intermediate" },
-    { name: "pdfplumber Extraction", level: "Intermediate" }
+  backendData: [
+    { name: "Node.js & Express.js", level: "Advanced" },
+    { name: "MongoDB & Atlas", level: "Advanced" },
+    { name: "REST API Integrations", level: "Advanced" },
+    { name: "Brevo Email API Workflows", level: "Intermediate" },
+    { name: "WebSockets / Real-Time", level: "Intermediate" }
   ],
-  database: [
-    { name: "MongoDB", level: "Advanced" },
-    { name: "MongoDB Atlas", level: "Advanced" },
-    { name: "ChromaDB (Vector)", level: "Intermediate" }
+  aiPipelines: [
+    { name: "RAG & Vector Embeddings", level: "Intermediate" },
+    { name: "ChromaDB & Ollama", level: "Intermediate" },
+    { name: "Streamlit UI Design", level: "Advanced" },
+    { name: "Gemini AI API", level: "Intermediate" }
   ],
-  toolsAndDevOps: [
-    { name: "Figma (UI/UX Mockups)", level: "Advanced" },
+  toolsDevOps: [
+    { name: "Figma", level: "Advanced" },
     { name: "Git & GitHub", level: "Advanced" },
-    { name: "CI/CD (Vercel & Render)", level: "Intermediate" },
-    { name: "Cloudflare & DNS", level: "Intermediate" },
-    { name: "Brevo Email API", level: "Intermediate" },
-    { name: "VS Code & Postman", level: "Advanced" }
+    { name: "Vercel & Render CI/CD", level: "Intermediate" },
+    { name: "Cloudflare DNS & SSL", level: "Intermediate" },
+    { name: "VS Code & DevTools", level: "Advanced" }
   ]
 };
 
 export const experiences = [
   {
     id: 1,
-    role: "Full Stack Web Developer Intern",
+    role: "Full Stack Web Developer & UI/UX Intern",
     company: "SLS Structo-Mech Consultants",
     location: "Remote / Hybrid",
     period: "Jul 2026 – Present",
-    type: "Internship",
+    type: "Client Web Redesign & Development",
     website: "https://www.slsnexus.com/",
     github: "https://github.com/SATYA-916/SLS",
     description: [
-      "Designed the company’s official website in Figma (wireframes, layouts, visual design systems) and presented mockups directly to stakeholders for feedback before development.",
-      "Developed the approved design into a responsive, high-performance production website using the MERN stack (React, Node.js, Express, MongoDB).",
-      "Built an intuitive admin dashboard UI with status tracking (New, To Do, Replied) and delete functionality to streamline client-inquiry triage.",
-      "Integrated Brevo Email API to automate dual email notifications — alerting the site owner with full inquiry specs and sending clients an instant 24hr acknowledgment response.",
-      "Configured Git-based CI/CD pipelines via Vercel and Render for automated zero-downtime deployments, alongside DNS and SSL setup through Cloudflare."
+      "Designed the company’s website in Figma — wireframes, layout, visual style, and component hierarchy — presenting mockups directly to stakeholders and iterating on feedback before development.",
+      "Built the approved design into a responsive, production-ready MERN platform, ensuring 1:1 fidelity with the Figma design system across all breakpoints and devices.",
+      "Engineered an intuitive admin dashboard UI with clear status states (New, To Do, Replied) and triage workflows to streamline client lead capture for non-technical internal teams.",
+      "Applied UX writing and interaction design to the contact inquiry funnel, integrating automated dual email notifications (Brevo API) with instant 24hr acknowledgment to optimize response conversion.",
+      "Set up Git-based CI/CD (Vercel, Render) and Cloudflare DNS/SSL so marketing design updates and UI improvements ship to production automatically on every commit."
     ],
-    skills: ["React", "Node.js", "Express.js", "MongoDB", "Figma", "Brevo API", "Cloudflare", "CI/CD"]
+    skills: ["Figma UI/UX", "Design Systems", "React", "Node.js", "Express.js", "MongoDB", "Brevo API", "Responsive Design", "CI/CD"]
   },
   {
     id: 2,
-    role: "AI Virtual Internship – PolicyNav",
+    role: "AI Virtual Internship – PolicyNav (UX & RAG)",
     company: "Infosys Springboard",
     location: "Virtual",
     period: "Aug 2025 – Oct 2025",
-    type: "Virtual Internship",
+    type: "AI Product & Interface Design",
     github: "https://github.com/SATYA-916/Public_Policy_Navigation_Using_AI",
     description: [
-      "Built an end-to-end automated Retrieval-Augmented Generation (RAG) pipeline in Python and Streamlit to simplify complex public policy document navigation.",
-      "Automated document processing using pdfplumber for deep text extraction and line-based semantic chunking of dense legal files.",
-      "Generated vector embeddings using Ollama (nomic-embed-text) and stored them in a persistent ChromaDB vector database for automated similarity search.",
-      "Engineered a grounded-prompting workflow that surfaces source-referenced document chunks via cosine similarity to drastically reduce AI hallucinations."
+      "Designed a simplified, human-centered Streamlit interface to make dense, complex public policy documents approachable and readable for non-expert users.",
+      "Prioritized clarity of retrieved information with visual source references, citation chips, and confidence indicators to eliminate user cognitive overload.",
+      "Built the underlying retrieval pipeline (PDF extraction via pdfplumber, line-based chunking, nomic-embed-text embeddings, ChromaDB) powering the semantic search UX."
     ],
-    skills: ["Python", "Streamlit", "RAG", "ChromaDB", "Ollama", "Embeddings", "pdfplumber"]
+    skills: ["UI/UX Design", "Streamlit", "Python", "RAG Pipeline", "ChromaDB", "User Clarity", "Information Architecture"]
   }
 ];
 
 export const projects = [
   {
-    id: "interview-ai",
-    title: "Interview AI Platform",
-    category: "Full Stack & Generative AI",
-    badge: "Featured AI Project",
-    summary: "Full-stack AI interview preparation platform offering ATS-friendly resume analysis, personalized technical question generation, and skill-gap reports using Google Gemini AI.",
+    id: "sls-nexus",
+    title: "SLS Nexus - Corporate Website & Lead Platform",
+    category: "Web Product Design & Client Production",
+    badge: "Figma to Production Client Site",
+    summary: "Complete redesign and development of SLS Structo-Mech's customer-facing engineering website, focusing on lead capture optimization, clear information architecture, and administrative triage.",
     highlights: [
-      "Automated resume analysis pipeline parsing candidate profiles into custom question banks",
-      "Interactive mock interview interface with real-time feedback and gap analysis",
-      "Secure JWT user authentication, protected routes, and session persistence",
-      "Deployed with scalable architecture across Vercel, Render, and MongoDB Atlas"
+      "Created complete Figma design system (typography, color tokens, reusable components) with stakeholder feedback loops",
+      "Redesigned the contact-to-lead flow with instant customer acknowledgment, boosting stakeholder engagement",
+      "Engineered a lightweight admin dashboard UI with status states (New, To Do, Replied) for non-technical operators",
+      "Achieved 100% responsive cross-device consistency and optimized web asset loading on Vercel and Cloudflare"
     ],
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB Atlas", "Google Gemini AI", "JWT", "Tailwind CSS"],
+    tech: ["Figma", "UI/UX Design", "React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Brevo API"],
+    github: "https://github.com/SATYA-916/SLS",
+    demo: "https://www.slsnexus.com/",
+    featured: true
+  },
+  {
+    id: "interview-ai",
+    title: "Interview AI - Career Preparation Platform",
+    category: "Product Design & Full Stack AI",
+    badge: "User Flow & AI Experience",
+    summary: "Designed and built the end-to-end user flow for an AI interview-prep platform, focusing on low-anxiety onboarding, resume ingestion, question generation, and actionable feedback reports.",
+    highlights: [
+      "Mapped user journeys and designed step-by-step interview flows minimizing candidate cognitive fatigue",
+      "Engineered ATS-friendly resume analysis pipeline delivering personalized questions and visual skill-gap analytics",
+      "Crafted a unified, accessible visual system in React with responsive Tailwind components and JWT authentication",
+      "Deployed full-stack cloud architecture across Vercel, Render, and MongoDB Atlas"
+    ],
+    tech: ["Product Design", "React.js", "Tailwind CSS", "Node.js", "Google Gemini AI", "MongoDB Atlas", "JWT"],
     github: "https://github.com/SATYA-916/AI_interview_preparation",
     demo: "https://ai-interview-preparation-dun.vercel.app/",
     featured: true
@@ -127,50 +146,32 @@ export const projects = [
   {
     id: "collab-editor",
     title: "Real-Time Collaborative Code Editor",
-    category: "Distributed Systems & WebSockets",
-    badge: "Real-Time Collaboration",
-    summary: "Simultaneous multi-user code editor with conflict-free synchronization, peer cursor tracking, and distraction-free React interface.",
+    category: "Interaction Design & Distributed Web",
+    badge: "Real-Time Interaction UX",
+    summary: "Designed a clean, distraction-free React interface for simultaneous multi-user code editing, balancing high information density with effortless usability.",
     highlights: [
-      "Integrated Yjs CRDT and Socket.IO for conflict-free real-time collaborative text editing",
-      "Engineered low-latency WebSocket communication layer for seamless peer updates",
-      "Designed responsive and clean interface balancing editor workspace and active user roster",
-      "Deployed for zero-friction live testing using Vercel and Render"
+      "Designed visual cues for peer presence, active cursors, and real-time synchronization state",
+      "Integrated Yjs CRDT and Socket.IO for seamless conflict-free collaborative editing",
+      "Optimized layout hierarchy to maximize editing canvas while keeping collaborator rosters accessible",
+      "Tested cross-browser responsiveness and low-latency interaction handling on Render and Vercel"
     ],
-    tech: ["React.js", "Socket.IO", "Yjs CRDT", "Node.js", "Express.js", "WebSockets", "Vercel"],
+    tech: ["Interaction Design", "React.js", "Socket.IO", "Yjs CRDT", "WebSockets", "Tailwind CSS"],
     github: "https://github.com/SATYA-916/collab-real",
     demo: "https://collab-real-19et.vercel.app/",
     featured: true
   },
   {
-    id: "sls-nexus",
-    title: "SLS Nexus Corporate Platform",
-    category: "Client Production & MERN",
-    badge: "Production Client Site",
-    summary: "Official production platform for SLS Structo-Mech Consultants with custom admin dashboard, client inquiry workflows, and automated email notifications.",
-    highlights: [
-      "Figma to production frontend with 100% responsive cross-device consistency",
-      "Full administrative dashboard with status triage (New / To Do / Replied)",
-      "Automated dual email notification pipelines with Brevo API integration",
-      "Configured Cloudflare DNS, SSL security, and Git-driven CI/CD deployment"
-    ],
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Brevo API", "Cloudflare", "Tailwind CSS"],
-    github: "https://github.com/SATYA-916/SLS",
-    demo: "https://www.slsnexus.com/",
-    featured: true
-  },
-  {
     id: "policy-nav",
     title: "PolicyNav - AI Public Policy Assistant",
-    category: "GenAI & RAG Pipeline",
-    badge: "GenAI Search Engine",
-    summary: "Intelligent document navigation system using local LLMs, vector search, and grounded citations for legal and public policy literature.",
+    category: "Information Architecture & RAG",
+    badge: "Document UX & Semantic Search",
+    summary: "Human-friendly AI search engine transforming dense legal and public policy PDFs into approachable, cited answers for citizens and analysts.",
     highlights: [
-      "Semantic chunking and embedding generation using nomic-embed-text via Ollama",
-      "Vector search engine powered by ChromaDB with cosine similarity matching",
-      "Streamlit UI tailored for non-technical users to query complex policy documents",
-      "Grounded prompt generation eliminating hallucinations through direct citation tagging"
+      "Crafted an intuitive search experience with clear source chunk citations to eliminate hallucinations",
+      "Engineered automated text chunking and nomic-embed-text vector embeddings with ChromaDB",
+      "Designed clean Streamlit UI focusing on content readability, search speed, and user trust"
     ],
-    tech: ["Python", "Streamlit", "ChromaDB", "Ollama", "RAG", "pdfplumber"],
+    tech: ["Information Architecture", "Python", "Streamlit", "ChromaDB", "Ollama", "RAG"],
     github: "https://github.com/SATYA-916/Public_Policy_Navigation_Using_AI",
     demo: null,
     featured: false
@@ -184,10 +185,10 @@ export const education = {
   period: "2023 – 2027",
   grade: "CGPA: 8.2 / 10.0",
   coursework: [
+    "Web Application Development & UI Design",
     "Data Structures & Algorithms",
-    "Object-Oriented Programming",
     "Database Management Systems (DBMS)",
-    "Web Application Development",
+    "Object-Oriented Software Design",
     "Artificial Intelligence Fundamentals",
     "Operating Systems & Computer Networks"
   ]
@@ -195,15 +196,15 @@ export const education = {
 
 export const achievements = [
   {
-    title: "Gitathon Hackathon",
-    desc: "Collaborated in a four-member engineering team to faithfully recreate the GitHub user interface, executing precise UI reproduction and responsive interactions."
+    title: "Gitathon Hackathon — UI Reproduction Challenge",
+    desc: "Collaborated in a four-member engineering team to faithfully recreate the GitHub user interface, executing precise UI reproduction, design token consistency, and responsive interactions."
   },
   {
-    title: "National Service Scheme (NSS) Volunteer",
-    desc: "Active volunteer organizing community development workshops, digital literacy drives, and social welfare initiatives."
+    title: "National Service Scheme (NSS) — Community Outreach",
+    desc: "Active volunteer organizing digital awareness workshops, social initiatives, and community engagement programs."
   },
   {
-    title: "LeetCode & Problem Solving",
-    desc: "Regularly solving algorithmic challenges across arrays, strings, dynamic programming, and graphs to sharpen computational thinking."
+    title: "LeetCode & Computational Problem Solving",
+    desc: "Regularly solving algorithmic challenges to maintain strong analytical thinking and efficient code architecture."
   }
 ];

@@ -1,14 +1,13 @@
 import React from 'react';
 import {
-  Code,
   Sparkles,
-  Bot,
-  Workflow,
   CheckCircle2,
   Terminal,
-  Cpu,
   Layers,
-  Zap
+  Zap,
+  TrendingUp,
+  Search,
+  LayoutTemplate
 } from 'lucide-react';
 import { FigmaIcon } from './Icons';
 import { personalInfo } from '../data/portfolioData';
@@ -16,24 +15,24 @@ import { personalInfo } from '../data/portfolioData';
 const About = () => {
   const pillars = [
     {
-      icon: <Layers className="w-5 h-5 text-teal-400" />,
-      title: "Full-Stack Web Engineering",
-      desc: "Building scalable, production-grade web applications using React, Node.js, Express, and MongoDB with modern clean architecture."
-    },
-    {
-      icon: <Bot className="w-5 h-5 text-cyan-400" />,
-      title: "Generative AI & RAG Pipelines",
-      desc: "Developing intelligent document navigation systems, vector embedding pipelines with ChromaDB & Ollama, and grounded prompt engineering."
-    },
-    {
       icon: <FigmaIcon className="w-5 h-5 text-purple-400" />,
-      title: "UI/UX & Product Design",
-      desc: "Creating polished Figma wireframes, mockups, and translating design systems seamlessly into responsive, accessible code."
+      title: "Figma UI/UX & Design Systems",
+      desc: "Creating modular Figma wireframes, component libraries, design token hierarchies, and interactive prototypes for stakeholder review before development."
     },
     {
-      icon: <Zap className="w-5 h-5 text-amber-400" />,
-      title: "Automation & API Integrations",
-      desc: "Architecting automated notification systems (Brevo), CI/CD release pipelines (Vercel, Render), and real-time WebSockets."
+      icon: <TrendingUp className="w-5 h-5 text-teal-400" />,
+      title: "Web Experience & Lead Conversion",
+      desc: "Enhancing user flows to optimize lead capture, reduce friction, design intuitive admin triage states (New, To Do, Replied), and improve customer delight."
+    },
+    {
+      icon: <LayoutTemplate className="w-5 h-5 text-cyan-400" />,
+      title: "Design-to-Engineering Handoff",
+      desc: "Translating approved Figma mockups 1:1 into responsive, production-grade React and Tailwind CSS UI with cross-browser compatibility and asset optimization."
+    },
+    {
+      icon: <Search className="w-5 h-5 text-amber-400" />,
+      title: "UX Research & Usability Strategy",
+      desc: "Analyzing user mental models, storyboarding interactions, refining UX copywriting, and structuring clear information architectures."
     }
   ];
 
@@ -45,47 +44,50 @@ const About = () => {
         <div className="flex flex-col items-center text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-semibold uppercase tracking-wider mb-3">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>About Me</span>
+            <span>Design & Engineering Philosophy</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-            Engineering with Passion & <span className="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">Purpose</span>
+            Designing with Empathy, <span className="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">Building for Impact</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full mt-4"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
-          {/* Left Column: Story & Terminal Card */}
+          {/* Left Column: Story & Design Spec Card */}
           <div className="lg:col-span-7 space-y-6">
             <div className="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-4">
               <h3 className="text-xl font-bold text-white flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-teal-400"></span>
-                Professional Overview
+                Product Design & Web Experience Focus
               </h3>
               <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-                I am a <span className="text-teal-300 font-semibold">Computer Science Engineering</span> student with hands-on experience building full-stack web applications and AI-driven automation systems. My journey spans delivering client websites from initial Figma mockups to live production, architecting RAG-powered document navigation pipelines, and building real-time collaborative applications.
+                I am a <span className="text-teal-300 font-semibold">Computer Science Engineering</span> student who designs and builds end-to-end web experiences — from initial user research and Figma wireframes to responsive, customer-facing production UI.
               </p>
               <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-                Whether it's building clean REST APIs, automating dual-notification email workflows with Brevo API, or experimenting with semantic vector retrieval in ChromaDB, I love solving real-world business problems through thoughtful software engineering.
+                I recently designed and launched a full client website redesign for <span className="text-teal-300 font-semibold">SLS Structo-Mech</span>, presenting mockups directly to stakeholders in Figma, incorporating feedback, and building the approved design with responsive React/Tailwind UI and an optimized lead capture funnel.
+              </p>
+              <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
+                Because I write code as fluently as I design in Figma, I bring a unique advantage to cross-functional teams: <span className="text-cyan-300 font-medium">zero-friction design-to-engineering handoff</span>, realistic interaction prototyping, and proactive cross-browser QA.
               </p>
               
               <div className="pt-2 border-t border-slate-800 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
                 <div>
-                  <span className="text-slate-400 block">Location:</span>
-                  <span className="text-slate-200 font-medium">Visakhapatnam, India</span>
+                  <span className="text-slate-400 block">Primary Tools:</span>
+                  <span className="text-slate-200 font-medium">Figma, React, Tailwind</span>
+                </div>
+                <div>
+                  <span className="text-slate-400 block">Focus:</span>
+                  <span className="text-slate-200 font-medium">Web Product Design & UX</span>
                 </div>
                 <div>
                   <span className="text-slate-400 block">Degree:</span>
-                  <span className="text-slate-200 font-medium">B.Tech CSE (2023–2027)</span>
-                </div>
-                <div>
-                  <span className="text-slate-400 block">College:</span>
-                  <span className="text-slate-200 font-medium">GITAM University</span>
+                  <span className="text-slate-200 font-medium">B.Tech CSE (GITAM)</span>
                 </div>
               </div>
             </div>
 
-            {/* Interactive Code Window */}
+            {/* Interactive Design System Spec Window */}
             <div className="rounded-2xl bg-[#0d1424] border border-slate-800/90 overflow-hidden shadow-2xl">
               <div className="bg-[#0a0f1d] px-4 py-3 border-b border-slate-800/80 flex items-center justify-between">
                 <div className="flex items-center gap-2">
@@ -94,23 +96,24 @@ const About = () => {
                   <div className="w-3 h-3 rounded-full bg-emerald-500/80"></div>
                 </div>
                 <div className="text-xs font-mono text-slate-400 flex items-center gap-1.5">
-                  <Terminal className="w-3.5 h-3.5 text-teal-400" />
-                  <span>satya_profile.ts</span>
+                  <Terminal className="w-3.5 h-3.5 text-purple-400" />
+                  <span>product_design_spec.json</span>
                 </div>
                 <div className="w-10"></div>
               </div>
               <div className="p-4 sm:p-6 font-mono text-xs sm:text-sm leading-relaxed overflow-x-auto text-slate-300">
-                <div><span className="text-purple-400">const</span> <span className="text-teal-300">engineer</span> = &#123;</div>
-                <div className="pl-4"><span className="text-cyan-300">name</span>: <span className="text-amber-300">"{personalInfo.name}"</span>,</div>
-                <div className="pl-4"><span className="text-cyan-300">primaryFocus</span>: <span className="text-amber-300">["MERN Stack", "GenAI & RAG", "Product Design"]</span>,</div>
-                <div className="pl-4"><span className="text-cyan-300">databaseEngines</span>: <span className="text-amber-300">["MongoDB Atlas", "ChromaDB (Vector)"]</span>,</div>
-                <div className="pl-4"><span className="text-cyan-300">strengths</span>: <span className="text-emerald-400">[</span></div>
-                <div className="pl-8"><span className="text-amber-300">"Figma to production-ready UI"</span>,</div>
-                <div className="pl-8"><span className="text-amber-300">"Vector embeddings & semantic retrieval"</span>,</div>
-                <div className="pl-8"><span className="text-amber-300">"Automated CI/CD & email workflows"</span></div>
-                <div className="pl-4"><span className="text-emerald-400">]</span>,</div>
-                <div className="pl-4"><span className="text-cyan-300">currentlyBuilding</span>: <span className="text-amber-300">"AI-powered apps & intelligent web platforms"</span></div>
-                <div>&#125;;</div>
+                <div>&#123;</div>
+                <div className="pl-4"><span className="text-purple-400">"designer"</span>: <span className="text-amber-300">"{personalInfo.name}"</span>,</div>
+                <div className="pl-4"><span className="text-purple-400">"designWorkflow"</span>: [</div>
+                <div className="pl-8"><span className="text-cyan-300">"User Research & Competitor Benchmarking"</span>,</div>
+                <div className="pl-8"><span className="text-cyan-300">"Figma Low/High-Fidelity Wireframing"</span>,</div>
+                <div className="pl-8"><span className="text-cyan-300">"Interactive Clickable Prototypes & Client Review"</span>,</div>
+                <div className="pl-8"><span className="text-cyan-300">"Design Token Systems & Component Libraries"</span>,</div>
+                <div className="pl-8"><span className="text-cyan-300">"Pixel-Perfect Responsive Frontend & Cross-Browser QA"</span></div>
+                <div className="pl-4">],</div>
+                <div className="pl-4"><span className="text-purple-400">"conversionFocus"</span>: <span className="text-emerald-400">"Lead capture funnels, friction reduction & triage dashboards"</span>,</div>
+                <div className="pl-4"><span className="text-purple-400">"designToCodeHandoff"</span>: <span className="text-emerald-400">"Seamless & 100% fidelity"</span></div>
+                <div>&#125;</div>
               </div>
             </div>
 

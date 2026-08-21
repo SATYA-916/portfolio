@@ -17,14 +17,16 @@ const Projects = () => {
 
   const filterOptions = [
     { id: 'all', label: 'All Projects' },
-    { id: 'ai', label: 'AI & RAG' },
-    { id: 'fullstack', label: 'Full Stack & MERN' },
+    { id: 'design', label: 'Product & UI/UX Design' },
+    { id: 'client', label: 'Client Platforms' },
+    { id: 'ai', label: 'AI Products' },
   ];
 
   const filteredProjects = projects.filter((project) => {
     if (filter === 'all') return true;
+    if (filter === 'design') return project.category.toLowerCase().includes('design') || project.category.toLowerCase().includes('interaction');
+    if (filter === 'client') return project.category.toLowerCase().includes('client') || project.id === 'sls-nexus';
     if (filter === 'ai') return project.category.toLowerCase().includes('ai') || project.category.toLowerCase().includes('rag');
-    if (filter === 'fullstack') return project.category.toLowerCase().includes('stack') || project.category.toLowerCase().includes('mern') || project.category.toLowerCase().includes('client');
     return true;
   });
 
@@ -36,13 +38,13 @@ const Projects = () => {
         <div className="flex flex-col items-center text-center mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider mb-3">
             <FolderGit2 className="w-3.5 h-3.5" />
-            <span>Featured Portfolio</span>
+            <span>Design & Web Portfolio</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-            Selected <span className="bg-gradient-to-r from-teal-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">Engineering Projects</span>
+            Featured <span className="bg-gradient-to-r from-teal-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">Design & Web Projects</span>
           </h2>
           <p className="text-slate-400 text-sm max-w-xl mt-2 text-center">
-            Production web platforms, real-time collaboration engines, and GenAI document search pipelines.
+            Figma-to-production client platforms, high-conversion lead workflows, and intuitive AI user experiences.
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full mt-4"></div>
         </div>
