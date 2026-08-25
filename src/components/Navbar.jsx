@@ -68,7 +68,7 @@ const Navbar = () => {
               </span>
               <span className="text-[11px] font-mono text-teal-400/80 flex items-center gap-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                Web Product Designer
+                MarTech & Web Experience
               </span>
             </div>
           </a>

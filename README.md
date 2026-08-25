@@ -1,8 +1,8 @@
-# ⚡ K. Satya Sampath Kumar — Web Product Designer & Developer Portfolio
+# ⚡ K. Satya Sampath Kumar — MarTech, Marketing Automation, Analytics & Web Portfolio
 
 A modern, responsive, high-performance portfolio website built with **React 19**, **Vite**, and **Tailwind CSS**. Optimized for rapid deployment on **Vercel** with full zero-configuration support.
 
-Tailored for **Web Product Design**, **Figma Design Systems**, **UI/UX Engineering**, and **Conversion-Driven Web Development**.
+Tailored for **MarTech (Marketing Technology & Automation)**, **Web Marketing & Analytics**, **Figma Design Systems**, and **Production Frontend Engineering**.
 
 ---
 
@@ -16,10 +16,10 @@ Tailored for **Web Product Design**, **Figma Design Systems**, **UI/UX Engineeri
 
 ## 🛠️ Core Capabilities
 
-- **UI/UX & Product Design:** Figma (Wireframing, Prototyping, Component Tokens, Design Systems), User Research, Storyboarding, Usability QA
-- **Frontend & Web Experience:** React 19, Tailwind CSS, Semantic HTML5, CSS Flexbox/Grid, Asset Optimization, Cross-Browser Compatibility
-- **Conversion & Growth UX:** Lead capture workflows, Friction reduction, Admin triage dashboards, Stakeholder presentation
-- **Backend & Data Integration:** Node.js, Express.js, REST APIs, MongoDB, Brevo Email Automation
+- **Marketing Operations & Automation:** Email Marketing Automation (Brevo API), Lead & Inquiry Tracking Dashboards (New/To Do/Replied), Contact-Form Lead Capture Design, UX Writing, Cross-Browser QA
+- **Data, Analytics & Reporting:** Excel (Formulas, Data Analysis, Reporting), PowerPoint Decks, Python (Pandas, Matplotlib), Vector Search (ChromaDB, Ollama)
+- **Web & Product Design:** Figma (Wireframing, Interactive Prototyping, Design Systems, Token Reuse), Responsive Web Design, Component Hierarchies
+- **Frontend & Deployment:** React 19, Tailwind CSS, JavaScript (ES6+), HTML5/CSS3, Git/GitHub, Vercel, Render, Cloudflare DNS/SSL, Node.js, MongoDB
 
 ---
 
@@ -51,6 +51,6 @@ Tailored for **Web Product Design**, **Figma Design Systems**, **UI/UX Engineeri
 
 ```bash
 git add .
-git commit -m "feat: optimize portfolio for Web Product Design internship"
+git commit -m "feat: align portfolio with MarTech, Analytics, Brevo automation, and Web systems"
 git push -u origin main
 ```

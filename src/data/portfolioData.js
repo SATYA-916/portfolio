@@ -1,13 +1,13 @@
 export const personalInfo = {
   name: "K. Satya Sampath Kumar",
   roles: [
-    "Web Product Designer",
-    "UI/UX & Design Systems Specialist",
-    "Design-to-Code Frontend Engineer",
-    "Full-Stack Web Developer"
+    "MarTech — Marketing Automation & Web",
+    "Web Product Designer & UI/UX Developer",
+    "Data & Analytics (Excel, Python)",
+    "Full-Stack Frontend Engineer"
   ],
-  tagline: "Designing high-conversion web experiences, scalable Figma design systems, and bridging design to production code.",
-  summary: "Computer Science student and Web Product Designer who designs and builds end-to-end web experiences — from user research, Figma wireframes, and client-facing prototypes to responsive, production-ready UI. Delivered a client website redesign with mockups presented and approved before development, optimized lead capture and triage flows, and consistently bridges the gap between design tools (Figma) and code (React, Tailwind CSS) for zero-friction handoff.",
+  tagline: "Building marketing-facing web systems, automated lead-notification workflows, and high-conversion web experiences.",
+  summary: "Computer Science student with hands-on experience building marketing-facing web systems: automated lead-notification workflows using the Brevo email API, and a lead-tracking dashboard for a live client website. Comfortable with data analysis and reporting in Excel and Python (Pandas, Matplotlib), presenting findings in PowerPoint, and turning Figma designs into responsive production interfaces. Keeps track of tasks and deadlines to stay aligned with marketing, design, and development timelines.",
   email: "satyasampath79@gmail.com",
   resumeUrl: "/Satya%20Sampath%20Kumar.pdf",
   location: "Visakhapatnam, India",
@@ -18,93 +18,86 @@ export const personalInfo = {
     email: "mailto:satyasampath79@gmail.com"
   },
   stats: [
+    { label: "Marketing Automation", value: "Brevo API" },
     { label: "Figma to Code", value: "100%" },
-    { label: "Design Systems & Web", value: "6+ Projects" },
     { label: "Client & AI Internships", value: "2" },
     { label: "B.Tech CGPA", value: "8.2" }
   ]
 };
 
 export const skillsData = {
-  design: [
-    { name: "Figma (Wireframing & Prototyping)", level: "Advanced" },
-    { name: "UI Design & Visual Hierarchy", level: "Advanced" },
-    { name: "Design Systems & Token Reuse", level: "Advanced" },
-    { name: "Responsive & Fluid Layouts", level: "Advanced" },
-    { name: "User Research & Testing", level: "Intermediate" },
-    { name: "Interaction Specs & Storyboarding", level: "Intermediate" },
+  marketingOps: [
+    { name: "Email Automation (Brevo API)", level: "Advanced" },
+    { name: "Lead & Inquiry Dashboards", level: "Advanced" },
+    { name: "Contact-Form Lead Capture Design", level: "Advanced" },
+    { name: "UX Writing & Copy", level: "Advanced" },
+    { name: "Stakeholder Presentations (PowerPoint)", level: "Advanced" },
+    { name: "Task & Deadline Tracking", level: "Advanced" },
     { name: "Cross-Browser QA", level: "Advanced" }
   ],
-  frontend: [
+  dataAnalytics: [
+    { name: "Excel (Formulas & Reporting)", level: "Advanced" },
+    { name: "Python (Pandas, Matplotlib)", level: "Intermediate" },
+    { name: "PowerPoint Visual Presentations", level: "Advanced" },
+    { name: "Vector Embeddings & ChromaDB", level: "Intermediate" },
+    { name: "Data Extraction & Structuring", level: "Intermediate" }
+  ],
+  webDesign: [
+    { name: "Figma (Wireframing & Prototyping)", level: "Advanced" },
+    { name: "Responsive Web Design", level: "Advanced" },
+    { name: "Design Systems & Token Reuse", level: "Advanced" },
+    { name: "UI Design & Visual Hierarchy", level: "Advanced" },
+    { name: "User Research & Iteration", level: "Intermediate" }
+  ],
+  frontendCode: [
     { name: "React.js", level: "Advanced" },
     { name: "Tailwind CSS", level: "Advanced" },
-    { name: "HTML5 & Semantic Web", level: "Advanced" },
-    { name: "Modern CSS / Flex / Grid", level: "Advanced" },
+    { name: "HTML5 & Semantic Structure", level: "Advanced" },
+    { name: "Modern CSS / Flexbox / Grid", level: "Advanced" },
     { name: "JavaScript (ES6+)", level: "Advanced" },
     { name: "Web Asset Optimization", level: "Advanced" }
   ],
-  productMarketing: [
-    { name: "Lead Capture Optimization", level: "Advanced" },
-    { name: "UX Writing & Copy", level: "Advanced" },
-    { name: "Admin Triage Dashboards", level: "Advanced" },
-    { name: "Client / Stakeholder Demos", level: "Advanced" },
-    { name: "Competitor UI Benchmarking", level: "Intermediate" }
-  ],
-  backendData: [
+  backendTools: [
     { name: "Node.js & Express.js", level: "Advanced" },
-    { name: "MongoDB & Atlas", level: "Advanced" },
+    { name: "MongoDB & MongoDB Atlas", level: "Advanced" },
     { name: "REST API Integrations", level: "Advanced" },
-    { name: "Brevo Email API Workflows", level: "Intermediate" },
-    { name: "WebSockets / Real-Time", level: "Intermediate" }
-  ],
-  aiPipelines: [
-    { name: "RAG & Vector Embeddings", level: "Intermediate" },
-    { name: "ChromaDB & Ollama", level: "Intermediate" },
-    { name: "Streamlit UI Design", level: "Advanced" },
-    { name: "Gemini AI API", level: "Intermediate" }
-  ],
-  toolsDevOps: [
-    { name: "Figma", level: "Advanced" },
-    { name: "Git & GitHub", level: "Advanced" },
-    { name: "Vercel & Render CI/CD", level: "Intermediate" },
-    { name: "Cloudflare DNS & SSL", level: "Intermediate" },
-    { name: "VS Code & DevTools", level: "Advanced" }
+    { name: "Git & GitHub Version Control", level: "Advanced" },
+    { name: "Vercel, Render & Cloudflare", level: "Intermediate" }
   ]
 };
 
 export const experiences = [
   {
     id: 1,
-    role: "Full Stack Web Developer & UI/UX Intern",
+    role: "Web Design & Frontend Development Intern",
     company: "SLS Structo-Mech Consultants",
     location: "Remote / Hybrid",
     period: "Jul 2026 – Present",
-    type: "Client Web Redesign & Development",
+    type: "Marketing Web & Frontend Development",
     website: "https://www.slsnexus.com/",
     github: "https://github.com/SATYA-916/SLS",
     description: [
-      "Designed the company’s website in Figma — wireframes, layout, visual style, and component hierarchy — presenting mockups directly to stakeholders and iterating on feedback before development.",
-      "Built the approved design into a responsive, production-ready MERN platform, ensuring 1:1 fidelity with the Figma design system across all breakpoints and devices.",
-      "Engineered an intuitive admin dashboard UI with clear status states (New, To Do, Replied) and triage workflows to streamline client lead capture for non-technical internal teams.",
-      "Applied UX writing and interaction design to the contact inquiry funnel, integrating automated dual email notifications (Brevo API) with instant 24hr acknowledgment to optimize response conversion.",
-      "Set up Git-based CI/CD (Vercel, Render) and Cloudflare DNS/SSL so marketing design updates and UI improvements ship to production automatically on every commit."
+      "Integrated the Brevo Email API to automate lead-notification workflows – every website inquiry triggers an instant alert to the team and an acknowledgment email to the prospect, with no manual step required.",
+      "Designed and built an internal lead-tracking dashboard with status states (New, To Do, Replied), giving the team a clear view of inquiry volume and follow-up status.",
+      "Designed the company website end-to-end in Figma – wireframes, page layouts, reusable components – then built the responsive production site, presenting mockups to stakeholders and iterating on feedback.",
+      "Kept a running task list with deadlines and implementation notes throughout the project to coordinate design and development work against client timelines.",
+      "Configured Git-based CI/CD with Vercel/Render and managed DNS and hosting via Cloudflare, keeping the site reliably live."
     ],
-    skills: ["Figma UI/UX", "Design Systems", "React", "Node.js", "Express.js", "MongoDB", "Brevo API", "Responsive Design", "CI/CD"]
+    skills: ["Brevo Email API", "Lead Dashboards", "Figma UI/UX", "React", "Tailwind CSS", "Node.js", "MongoDB", "CI/CD & Cloudflare"]
   },
   {
     id: 2,
-    role: "AI Virtual Internship – PolicyNav (UX & RAG)",
+    role: "AI Virtual Internship – PolicyNav",
     company: "Infosys Springboard",
     location: "Virtual",
     period: "Aug 2025 – Oct 2025",
-    type: "AI Product & Interface Design",
+    type: "Data Pipeline & Interface Design",
     github: "https://github.com/SATYA-916/Public_Policy_Navigation_Using_AI",
     description: [
-      "Designed a simplified, human-centered Streamlit interface to make dense, complex public policy documents approachable and readable for non-expert users.",
-      "Prioritized clarity of retrieved information with visual source references, citation chips, and confidence indicators to eliminate user cognitive overload.",
-      "Built the underlying retrieval pipeline (PDF extraction via pdfplumber, line-based chunking, nomic-embed-text embeddings, ChromaDB) powering the semantic search UX."
+      "Built a Python data pipeline – PDF parsing (pdfplumber), chunking, vector embeddings, ChromaDB – to structure and retrieve dense public-policy data for a clearer, searchable user experience.",
+      "Designed a simplified Streamlit interface prioritizing readability and information hierarchy for non-expert users."
     ],
-    skills: ["UI/UX Design", "Streamlit", "Python", "RAG Pipeline", "ChromaDB", "User Clarity", "Information Architecture"]
+    skills: ["Python", "Data Pipelines", "ChromaDB", "Vector Search", "Streamlit", "Information Architecture"]
   }
 ];
 
@@ -112,33 +105,49 @@ export const projects = [
   {
     id: "sls-nexus",
     title: "SLS Nexus - Corporate Website & Lead Platform",
-    category: "Web Product Design & Client Production",
-    badge: "Figma to Production Client Site",
-    summary: "Complete redesign and development of SLS Structo-Mech's customer-facing engineering website, focusing on lead capture optimization, clear information architecture, and administrative triage.",
+    category: "Marketing Automation & Web Design",
+    badge: "Live Client Site & Lead Hub",
+    summary: "Customer-facing website and internal lead-tracking platform with automated dual email notification workflows via Brevo API and a custom status triage dashboard.",
     highlights: [
-      "Created complete Figma design system (typography, color tokens, reusable components) with stakeholder feedback loops",
-      "Redesigned the contact-to-lead flow with instant customer acknowledgment, boosting stakeholder engagement",
-      "Engineered a lightweight admin dashboard UI with status states (New, To Do, Replied) for non-technical operators",
-      "Achieved 100% responsive cross-device consistency and optimized web asset loading on Vercel and Cloudflare"
+      "Automated prospect lead capture with Brevo API, sending instant team alerts and customer 24-hr acknowledgment emails",
+      "Designed and built internal triage dashboard with status tracking (New, To Do, Replied) for streamlined inquiry management",
+      "Figma design system to production MERN stack with 100% responsive cross-device consistency",
+      "Managed hosting, DNS, SSL security via Cloudflare and automated deployments via Vercel/Render"
     ],
-    tech: ["Figma", "UI/UX Design", "React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Brevo API"],
+    tech: ["Brevo API", "Figma", "React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Cloudflare"],
     github: "https://github.com/SATYA-916/SLS",
     demo: "https://www.slsnexus.com/",
     featured: true
   },
   {
-    id: "interview-ai",
-    title: "Interview AI - Career Preparation Platform",
-    category: "Product Design & Full Stack AI",
-    badge: "User Flow & AI Experience",
-    summary: "Designed and built the end-to-end user flow for an AI interview-prep platform, focusing on low-anxiety onboarding, resume ingestion, question generation, and actionable feedback reports.",
+    id: "quizhub",
+    title: "QuizHub – Interactive Quiz & Analytics Platform",
+    category: "Web Product & Dashboard Design",
+    badge: "Admin Dashboard & Design System",
+    summary: "Interactive quiz platform featuring an intuitive admin dashboard for quiz creation, results review, and a clean UI component system.",
     highlights: [
-      "Mapped user journeys and designed step-by-step interview flows minimizing candidate cognitive fatigue",
-      "Engineered ATS-friendly resume analysis pipeline delivering personalized questions and visual skill-gap analytics",
-      "Crafted a unified, accessible visual system in React with responsive Tailwind components and JWT authentication",
-      "Deployed full-stack cloud architecture across Vercel, Render, and MongoDB Atlas"
+      "Built an administrative dashboard for real-time quiz creation, performance analytics, and participant results review",
+      "Created a reusable design system featuring consistent status badges, smooth state transitions, and accessible UI patterns",
+      "Implemented live client-side field validation on the quiz builder interface to eliminate input friction and errors"
     ],
-    tech: ["Product Design", "React.js", "Tailwind CSS", "Node.js", "Google Gemini AI", "MongoDB Atlas", "JWT"],
+    tech: ["React.js", "Tailwind CSS", "Dashboard UI", "Design Systems", "Field Validation", "Vercel"],
+    github: "https://github.com/SATYA-916",
+    demo: "https://ai-interview-preparation-dun.vercel.app/",
+    featured: true
+  },
+  {
+    id: "interview-ai",
+    title: "Interview AI Platform",
+    category: "AI Data Ingestion & Full Stack",
+    badge: "AI Product & Analytics",
+    summary: "AI interview-prep platform with an automated resume-analysis pipeline that parses uploaded resumes and generates personalized reports and skill-gap insights.",
+    highlights: [
+      "Built automated resume ingestion pipeline parsing candidate profiles into custom question banks and skill gap reports",
+      "Designed low-anxiety candidate onboarding and step-by-step interview flows in React and Tailwind CSS",
+      "Integrated secure JWT authentication, session persistence, and Google Gemini AI API",
+      "Deployed across Vercel, Render, and MongoDB Atlas"
+    ],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB Atlas", "Google Gemini AI", "JWT", "Tailwind CSS"],
     github: "https://github.com/SATYA-916/AI_interview_preparation",
     demo: "https://ai-interview-preparation-dun.vercel.app/",
     featured: true
@@ -146,32 +155,31 @@ export const projects = [
   {
     id: "collab-editor",
     title: "Real-Time Collaborative Code Editor",
-    category: "Interaction Design & Distributed Web",
-    badge: "Real-Time Interaction UX",
-    summary: "Designed a clean, distraction-free React interface for simultaneous multi-user code editing, balancing high information density with effortless usability.",
+    category: "Real-Time Systems & Web UI",
+    badge: "WebSockets & Interaction Design",
+    summary: "Simultaneous multi-user code editor with conflict-free synchronization, peer cursor tracking, and distraction-free React interface.",
     highlights: [
       "Designed visual cues for peer presence, active cursors, and real-time synchronization state",
       "Integrated Yjs CRDT and Socket.IO for seamless conflict-free collaborative editing",
-      "Optimized layout hierarchy to maximize editing canvas while keeping collaborator rosters accessible",
-      "Tested cross-browser responsiveness and low-latency interaction handling on Render and Vercel"
+      "Optimized layout hierarchy balancing canvas workspace and active user roster"
     ],
-    tech: ["Interaction Design", "React.js", "Socket.IO", "Yjs CRDT", "WebSockets", "Tailwind CSS"],
+    tech: ["React.js", "Socket.IO", "Yjs CRDT", "WebSockets", "Tailwind CSS", "Render"],
     github: "https://github.com/SATYA-916/collab-real",
     demo: "https://collab-real-19et.vercel.app/",
-    featured: true
+    featured: false
   },
   {
     id: "policy-nav",
     title: "PolicyNav - AI Public Policy Assistant",
-    category: "Information Architecture & RAG",
-    badge: "Document UX & Semantic Search",
-    summary: "Human-friendly AI search engine transforming dense legal and public policy PDFs into approachable, cited answers for citizens and analysts.",
+    category: "Python Data Pipeline & Information UX",
+    badge: "Python & Vector Search",
+    summary: "Python data pipeline and Streamlit interface structuring dense legal and policy data for searchability and clear user readability.",
     highlights: [
-      "Crafted an intuitive search experience with clear source chunk citations to eliminate hallucinations",
-      "Engineered automated text chunking and nomic-embed-text vector embeddings with ChromaDB",
+      "Automated document processing with pdfplumber and semantic chunking of complex documents",
+      "Generated nomic-embed-text vector embeddings stored in persistent ChromaDB for semantic retrieval",
       "Designed clean Streamlit UI focusing on content readability, search speed, and user trust"
     ],
-    tech: ["Information Architecture", "Python", "Streamlit", "ChromaDB", "Ollama", "RAG"],
+    tech: ["Python", "Pandas", "Streamlit", "ChromaDB", "Ollama", "pdfplumber"],
     github: "https://github.com/SATYA-916/Public_Policy_Navigation_Using_AI",
     demo: null,
     featured: false
@@ -188,7 +196,7 @@ export const education = {
     "Web Application Development & UI Design",
     "Data Structures & Algorithms",
     "Database Management Systems (DBMS)",
-    "Object-Oriented Software Design",
+    "Data Analytics & Computational Methods",
     "Artificial Intelligence Fundamentals",
     "Operating Systems & Computer Networks"
   ]
@@ -197,7 +205,7 @@ export const education = {
 export const achievements = [
   {
     title: "Gitathon Hackathon — UI Reproduction Challenge",
-    desc: "Collaborated in a four-member engineering team to faithfully recreate the GitHub user interface, executing precise UI reproduction, design token consistency, and responsive interactions."
+    desc: "Collaborated in a four-member engineering team to recreate the GitHub user interface, focusing on responsive layouts, visual consistency, and UI implementation."
   },
   {
     title: "National Service Scheme (NSS) — Community Outreach",
