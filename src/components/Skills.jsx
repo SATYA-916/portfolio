@@ -6,10 +6,9 @@ import {
   Sparkles,
   Layers,
   Palette,
-  TrendingUp,
   BarChart3,
   MailCheck,
-  Cpu
+  Disc
 } from 'lucide-react';
 import { FigmaIcon } from './Icons';
 import { skillsData } from '../data/portfolioData';
@@ -18,44 +17,54 @@ const Skills = () => {
   const [activeTab, setActiveTab] = useState('all');
 
   const categories = [
-    { id: 'all', label: 'All Skills', icon: <Layers className="w-4 h-4" /> },
-    { id: 'marketingOps', label: 'Marketing Ops & Automation', icon: <MailCheck className="w-4 h-4" /> },
-    { id: 'dataAnalytics', label: 'Data & Analytics', icon: <BarChart3 className="w-4 h-4" /> },
-    { id: 'webDesign', label: 'Figma & UI/UX', icon: <Palette className="w-4 h-4" /> },
-    { id: 'frontendCode', label: 'Frontend & Web UI', icon: <Layout className="w-4 h-4" /> },
-    { id: 'backendTools', label: 'Backend & Cloud DevOps', icon: <Server className="w-4 h-4" /> }
+    { id: 'all', label: '[ALL MODULES]', icon: <Layers className="w-4 h-4" /> },
+    { id: 'marketingOps', label: '[MARKETING OPS]', icon: <MailCheck className="w-4 h-4" /> },
+    { id: 'dataAnalytics', label: '[DATA & ANALYTICS]', icon: <BarChart3 className="w-4 h-4" /> },
+    { id: 'webDesign', label: '[FIGMA & UI/UX]', icon: <Palette className="w-4 h-4" /> },
+    { id: 'frontendCode', label: '[FRONTEND CODE]', icon: <Layout className="w-4 h-4" /> },
+    { id: 'backendTools', label: '[BACKEND & CLOUD]', icon: <Server className="w-4 h-4" /> }
   ];
 
   const categoryDetails = {
     marketingOps: {
+      tag: "CARTRIDGE_01",
       title: "Marketing Automation & Web Ops",
-      icon: <MailCheck className="w-5 h-5 text-teal-400" />,
+      icon: <MailCheck className="w-5 h-5 text-retroCyan" />,
       skills: skillsData.marketingOps,
-      gradient: "from-teal-500/10 to-transparent"
+      border: "border-retroCyan",
+      glowText: "text-retroCyan"
     },
     dataAnalytics: {
+      tag: "CARTRIDGE_02",
       title: "Data Analysis, Excel & Reporting",
-      icon: <BarChart3 className="w-5 h-5 text-cyan-400" />,
+      icon: <BarChart3 className="w-5 h-5 text-retroYellow" />,
       skills: skillsData.dataAnalytics,
-      gradient: "from-cyan-500/10 to-transparent"
+      border: "border-retroYellow",
+      glowText: "text-retroYellow"
     },
     webDesign: {
+      tag: "CARTRIDGE_03",
       title: "Figma UI/UX & Responsive Web Design",
-      icon: <FigmaIcon className="w-5 h-5 text-purple-400" />,
+      icon: <FigmaIcon className="w-5 h-5 text-retroPink" />,
       skills: skillsData.webDesign,
-      gradient: "from-purple-500/10 to-transparent"
+      border: "border-retroPink",
+      glowText: "text-retroPink"
     },
     frontendCode: {
+      tag: "CARTRIDGE_04",
       title: "Design-to-Code Frontend Engineering",
-      icon: <Layout className="w-5 h-5 text-emerald-400" />,
+      icon: <Layout className="w-5 h-5 text-retroGreen" />,
       skills: skillsData.frontendCode,
-      gradient: "from-emerald-500/10 to-transparent"
+      border: "border-retroGreen",
+      glowText: "text-retroGreen"
     },
     backendTools: {
+      tag: "CARTRIDGE_05",
       title: "Backend, APIs & Cloud Hosting",
-      icon: <Server className="w-5 h-5 text-blue-400" />,
+      icon: <Server className="w-5 h-5 text-retroPurple" />,
       skills: skillsData.backendTools,
-      gradient: "from-blue-500/10 to-transparent"
+      border: "border-retroPurple",
+      glowText: "text-retroPurple"
     }
   };
 
@@ -64,34 +73,34 @@ const Skills = () => {
     : [activeTab];
 
   return (
-    <section id="skills" className="py-20 relative bg-[#0b101d] bg-dot-pattern">
+    <section id="skills" className="py-20 relative bg-[#0b0f19] retro-grid-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-3">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Technical & Marketing Toolkit</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-black border-2 border-retroYellow text-retroYellow text-xs font-mono font-bold uppercase tracking-wider mb-3 shadow-[3px_3px_0px_#000]">
+            <Disc className="w-3.5 h-3.5 text-retroCyan animate-spin" />
+            <span>// SKILL CARTRIDGES & INVENTORY</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-            Marketing Ops, Data & <span className="bg-gradient-to-r from-teal-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">Web Skills</span>
+          <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-white uppercase">
+            TECHNICAL & <span className="text-retroCyan retro-glow-cyan">MARKETING TOOLKIT</span>
           </h2>
-          <p className="text-slate-400 text-sm max-w-2xl mt-2 text-center">
+          <p className="text-slate-400 text-sm max-w-2xl mt-2 text-center font-sans">
             Hands-on expertise across marketing automation (Brevo API), data analysis (Excel, Python), Figma design systems, and production frontend engineering.
           </p>
-          <div className="w-20 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full mt-4"></div>
+          <div className="w-24 h-1.5 bg-gradient-to-r from-retroCyan via-retroPink to-retroYellow mt-4"></div>
         </div>
 
-        {/* Filter Tabs */}
+        {/* Filter Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
           {categories.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all ${
+              className={`inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-mono font-bold transition-all ${
                 activeTab === tab.id
-                  ? 'bg-gradient-to-r from-teal-500 to-cyan-500 text-slate-950 font-bold shadow-lg shadow-teal-500/20 scale-105'
-                  : 'bg-slate-900/90 text-slate-300 border border-slate-800 hover:border-slate-700 hover:text-white'
+                  ? 'bg-retroCyan text-black border-2 border-black shadow-[3px_3px_0px_#ff007f] translate-x-[1px] translate-y-[1px]'
+                  : 'bg-black text-slate-300 border-2 border-slate-700 hover:border-retroCyan hover:text-retroCyan shadow-[3px_3px_0px_#000]'
               }`}
             >
               {tab.icon}
@@ -100,46 +109,49 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Skills Cards Grid */}
+        {/* Retro Skills Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredCategories.map((key) => {
             const cat = categoryDetails[key];
             return (
               <div
                 key={key}
-                className="glass-card glass-card-hover rounded-2xl p-6 border border-slate-800/80 relative overflow-hidden group flex flex-col justify-between"
+                className={`bg-[#0a0e19] p-6 border-2 ${cat.border} shadow-[6px_6px_0px_#000] flex flex-col justify-between hover:translate-y-[-2px] transition-all group`}
               >
-                {/* Top Subtle Gradient */}
-                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${cat.gradient}`}></div>
-
                 <div>
-                  {/* Category Title & Icon */}
-                  <div className="flex items-center gap-3 mb-5 pb-3 border-b border-slate-800">
-                    <div className="p-2 rounded-xl bg-slate-900 border border-slate-800 group-hover:border-teal-500/30 transition-colors">
-                      {cat.icon}
+                  {/* Cartridge Header */}
+                  <div className="flex items-center justify-between pb-3 mb-4 border-b-2 border-slate-800">
+                    <div className="flex items-center gap-2.5">
+                      <div className="p-2 bg-black border border-slate-700 group-hover:border-retroCyan transition-colors">
+                        {cat.icon}
+                      </div>
+                      <h3 className="font-display font-bold text-white text-sm uppercase">
+                        {cat.title}
+                      </h3>
                     </div>
-                    <h3 className="font-semibold text-white text-base">
-                      {cat.title}
-                    </h3>
                   </div>
+
+                  <span className={`text-[10px] font-pixel ${cat.glowText} block mb-3`}>
+                    [{cat.tag}]
+                  </span>
 
                   {/* Skills Pills */}
                   <div className="flex flex-wrap gap-2">
                     {cat.skills.map((skill, sIdx) => (
                       <div
                         key={sIdx}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800/90 text-slate-200 text-xs font-medium hover:border-teal-500/40 hover:text-teal-300 hover:bg-teal-500/5 transition-all"
+                        className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-black border border-slate-700 text-slate-200 text-xs font-mono hover:border-retroCyan hover:text-retroCyan transition-colors"
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-teal-400"></span>
+                        <span className="w-1.5 h-1.5 bg-retroCyan"></span>
                         <span>{skill.name}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                <div className="mt-5 pt-3 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-slate-400 font-mono">
-                  <span>{cat.skills.length} competencies</span>
-                  <span className="text-teal-400">Production ready</span>
+                <div className="mt-6 pt-3 border-t border-slate-800 flex items-center justify-between text-[10px] font-mono text-slate-400">
+                  <span>CAPACITY: {cat.skills.length} ITEMS</span>
+                  <span className="text-retroGreen font-bold">[VERIFIED ✓]</span>
                 </div>
               </div>
             );

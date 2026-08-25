@@ -5,62 +5,150 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
   }
 }
 
-/* Custom modern scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+/* Subtle Retro CRT Scanlines Overlay */
+.retro-scanlines::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 40;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.6;
 }
 
-::-webkit-scrollbar-track {
-  background: #090d16;
+/* Retro CRT Vignette */
+.retro-scanlines::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: radial-gradient(circle, transparent 65%, rgba(5, 8, 15, 0.7) 100%);
+  z-index: 41;
+  pointer-events: none;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #1e293b;
-  border-radius: 4px;
+/* Retro Synthwave Cyber Grid Background */
+.retro-grid-bg {
+  background-color: #080c14;
+  background-image: 
+    linear-gradient(rgba(0, 240, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #334155;
-}
-
-/* Background grid pattern */
-.bg-grid-pattern {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
-  background-size: 32px 32px;
-}
-
-.bg-dot-pattern {
-  background-image: radial-gradient(rgba(45, 212, 191, 0.12) 1px, transparent 1px);
+.retro-dot-bg {
+  background-image: radial-gradient(rgba(255, 0, 127, 0.15) 1.5px, transparent 1.5px);
   background-size: 24px 24px;
 }
 
-/* Glassmorphism */
-.glass-card {
-  background: rgba(15, 23, 42, 0.65);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+/* Retro Window Frame */
+.retro-window {
+  background: #0f1523;
+  border: 2px solid #2a3652;
+  box-shadow: 5px 5px 0px 0px rgba(0, 240, 255, 0.2), 5px 5px 0px 1px #000000;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.glass-card-hover {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.retro-window:hover {
+  border-color: #00f0ff;
+  box-shadow: 6px 6px 0px 0px #00f0ff, 6px 6px 0px 1px #000000;
+  transform: translate(-2px, -2px);
 }
 
-.glass-card-hover:hover {
-  transform: translateY(-4px);
-  border-color: rgba(45, 212, 191, 0.35);
-  box-shadow: 0 12px 30px -10px rgba(45, 212, 191, 0.15);
+.retro-window-pink:hover {
+  border-color: #ff007f;
+  box-shadow: 6px 6px 0px 0px #ff007f, 6px 6px 0px 1px #000000;
+  transform: translate(-2px, -2px);
 }
 
-/* Glowing text and borders */
-.glow-teal {
-  text-shadow: 0 0 20px rgba(45, 212, 191, 0.5);
+.retro-window-yellow:hover {
+  border-color: #ffe600;
+  box-shadow: 6px 6px 0px 0px #ffe600, 6px 6px 0px 1px #000000;
+  transform: translate(-2px, -2px);
 }
 
-.glow-blue {
-  text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+/* Retro Button Style with 3D arcade press */
+.retro-btn {
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px 0px #00f0ff;
+  transition: all 0.15s ease;
+}
+
+.retro-btn:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px 0px #00f0ff;
+}
+
+.retro-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px 0px #00f0ff;
+}
+
+.retro-btn-pink {
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px 0px #ff007f;
+}
+
+.retro-btn-pink:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px 0px #ff007f;
+}
+
+.retro-btn-pink:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px 0px #ff007f;
+}
+
+.retro-btn-yellow {
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px 0px #ffe600;
+}
+
+.retro-btn-yellow:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px 0px #ffe600;
+}
+
+.retro-btn-yellow:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px 0px #ffe600;
+}
+
+/* Retro Neon Glowing Text */
+.retro-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.7), 0 0 20px rgba(0, 240, 255, 0.4);
+}
+
+.retro-glow-pink {
+  text-shadow: 0 0 10px rgba(255, 0, 127, 0.7), 0 0 20px rgba(255, 0, 127, 0.4);
+}
+
+.retro-glow-green {
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.7), 0 0 20px rgba(57, 255, 20, 0.4);
+}
+
+/* Custom 8-bit / arcade Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080c14;
+  border-left: 2px solid #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00f0ff;
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 0px #ff007f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff007f;
 }
