@@ -6,7 +6,7 @@ export const personalInfo = {
     "Data & Analytics (Excel, Python)",
     "Full-Stack Frontend Engineer"
   ],
-  tagline: "Building marketing-facing web systems, automated lead-notification workflows, and high-conversion web experiences.",
+  tagline: "Building marketing-facing web systems, automated lead-notification workflows, and web experiences.",
   summary: "Computer Science student with hands-on experience building marketing-facing web systems: automated lead-notification workflows using the Brevo email API, and a lead-tracking dashboard for a live client website. Comfortable with data analysis and reporting in Excel and Python (Pandas, Matplotlib), presenting findings in PowerPoint, and turning Figma designs into responsive production interfaces. Keeps track of tasks and deadlines to stay aligned with marketing, design, and development timelines.",
   email: "satyasampath79@gmail.com",
   resumeUrl: "/Satya%20Sampath%20Kumar.pdf",
@@ -19,7 +19,7 @@ export const personalInfo = {
   },
   stats: [
     { label: "Marketing Automation", value: "Brevo API" },
-    { label: "Figma to Code", value: "100%" },
+    { label: "Design to Code", value: "Figma → Code" },
     { label: "Client & AI Internships", value: "2" },
     { label: "B.Tech CGPA", value: "8.2" }
   ]
@@ -109,9 +109,9 @@ export const projects = [
     badge: "Live Client Site & Lead Hub",
     summary: "Customer-facing website and internal lead-tracking platform with automated dual email notification workflows via Brevo API and a custom status triage dashboard.",
     highlights: [
-      "Automated prospect lead capture with Brevo API, sending instant team alerts and customer 24-hr acknowledgment emails",
+      "Automated prospect lead capture with Brevo API, sending an instant alert to the team and an acknowledgment email to the prospect committing to a reply within 24 business hours.",
       "Designed and built internal triage dashboard with status tracking (New, To Do, Replied) for streamlined inquiry management",
-      "Figma design system to production MERN stack with 100% responsive cross-device consistency",
+      "Figma design system to production MERN stack, responsive across desktop, tablet, and mobile",
       "Managed hosting, DNS, SSL security via Cloudflare and automated deployments via Vercel/Render"
     ],
     tech: ["Brevo API", "Figma", "React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Cloudflare"],
@@ -126,7 +126,7 @@ export const projects = [
     badge: "Admin Dashboard & Design System",
     summary: "Interactive quiz platform featuring an intuitive admin dashboard for quiz creation, results review, and a clean UI component system.",
     highlights: [
-      "Built an administrative dashboard for real-time quiz creation, performance analytics, and participant results review",
+      "Built an administrative dashboard for quiz creation, performance analytics, and participant results review",
       "Created a reusable design system featuring consistent status badges, smooth state transitions, and accessible UI patterns",
       "Implemented live client-side field validation on the quiz builder interface to eliminate input friction and errors"
     ],

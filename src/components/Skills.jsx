@@ -32,7 +32,8 @@ const Skills = () => {
       icon: <MailCheck className="w-5 h-5 text-retroCyan" />,
       skills: skillsData.marketingOps,
       border: "border-retroCyan",
-      glowText: "text-retroCyan"
+      glowText: "text-retroCyan",
+      status: "Production ready"
     },
     dataAnalytics: {
       tag: "CARTRIDGE_02",
@@ -48,7 +49,8 @@ const Skills = () => {
       icon: <FigmaIcon className="w-5 h-5 text-retroPink" />,
       skills: skillsData.webDesign,
       border: "border-retroPink",
-      glowText: "text-retroPink"
+      glowText: "text-retroPink",
+      status: "Production ready"
     },
     frontendCode: {
       tag: "CARTRIDGE_04",
@@ -56,7 +58,8 @@ const Skills = () => {
       icon: <Layout className="w-5 h-5 text-retroGreen" />,
       skills: skillsData.frontendCode,
       border: "border-retroGreen",
-      glowText: "text-retroGreen"
+      glowText: "text-retroGreen",
+      status: "Production ready"
     },
     backendTools: {
       tag: "CARTRIDGE_05",
@@ -64,7 +67,8 @@ const Skills = () => {
       icon: <Server className="w-5 h-5 text-retroPurple" />,
       skills: skillsData.backendTools,
       border: "border-retroPurple",
-      glowText: "text-retroPurple"
+      glowText: "text-retroPurple",
+      status: "Production ready"
     }
   };
 
@@ -151,7 +155,11 @@ const Skills = () => {
 
                 <div className="mt-6 pt-3 border-t border-slate-800 flex items-center justify-between text-[10px] font-mono text-slate-400">
                   <span>CAPACITY: {cat.skills.length} ITEMS</span>
-                  <span className="text-retroGreen font-bold">[VERIFIED ✓]</span>
+                  {cat.status ? (
+                    <span className="text-retroGreen font-bold">[{cat.status.toUpperCase()}]</span>
+                  ) : (
+                    <span></span>
+                  )}
                 </div>
               </div>
             );

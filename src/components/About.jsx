@@ -19,14 +19,14 @@ const About = () => {
       tag: "MODULE_01",
       border: "border-retroCyan",
       title: "Marketing Automation & Lead Capture",
-      desc: "Architecting automated email workflows with Brevo API, designing friction-free contact funnels, and building status triage dashboards (New, To Do, Replied)."
+      desc: "Integrating automated email workflows with Brevo API, designing friction-free contact funnels, and building status triage dashboards (New, To Do, Replied)."
     },
     {
       icon: <BarChart3 className="w-5 h-5 text-retroYellow" />,
       tag: "MODULE_02",
       border: "border-retroYellow",
       title: "Data Analytics & Excel Reporting",
-      desc: "Analyzing user inquiry data, building structured reports with Excel formulas, and writing Python (Pandas/Matplotlib) data pipelines to present findings in PowerPoint."
+      desc: "Comfortable analyzing data and building reports with Excel formulas, Python (Pandas/Matplotlib), and PowerPoint."
     },
     {
       icon: <FigmaIcon className="w-5 h-5 text-retroPink" />,
@@ -115,11 +115,11 @@ const About = () => {
                 <div className="pl-4"><span className="text-retroPink">"candidate"</span>: <span className="text-retroYellow">"{personalInfo.name}"</span>,</div>
                 <div className="pl-4"><span className="text-retroPink">"marketingAutomation"</span>: &#123;</div>
                 <div className="pl-8"><span className="text-retroCyan">"emailEngine"</span>: <span className="text-retroYellow">"Brevo API (Instant Alert + Prospect Acknowledgment)"</span>,</div>
-                <div className="pl-8"><span className="text-retroCyan">"leadDashboard"</span>: <span className="text-retroYellow">"Real-time status triage (New, To Do, Replied)"</span>,</div>
-                <div className="pl-8"><span className="text-retroCyan">"conversionFunnel"</span>: <span className="text-retroYellow">"High-converting contact-form design with zero manual delay"</span></div>
+                <div className="pl-8"><span className="text-retroCyan">"leadDashboard"</span>: <span className="text-retroYellow">"Status triage dashboards (New, To Do, Replied)"</span>,</div>
+                <div className="pl-8"><span className="text-retroCyan">"conversionFunnel"</span>: <span className="text-retroYellow">"contact-form design with no manual delay"</span></div>
                 <div className="pl-4">&#125;,</div>
                 <div className="pl-4"><span className="text-retroPink">"analyticsAndReporting"</span>: <span className="text-retroGreen">["Excel Formulas &amp; Reports", "Python Pandas/Matplotlib", "PowerPoint Decks"]</span>,</div>
-                <div className="pl-4"><span className="text-retroPink">"designToExecution"</span>: <span className="text-retroGreen">"Figma wireframes &amp; component tokens to 100% responsive React/Tailwind code"</span></div>
+                <div className="pl-4"><span className="text-retroPink">"designToExecution"</span>: <span className="text-retroGreen">"Figma wireframes &amp; reusable components to responsive React/Tailwind code"</span></div>
                 <div>&#125;</div>
               </div>
             </div>
