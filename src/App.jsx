@@ -1,4 +1,5 @@
 import React from 'react';
+import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -11,24 +12,26 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#090d16] text-slate-100 selection:bg-teal-500/30 selection:text-teal-200">
-      {/* Sticky Navigation */}
-      <Navbar />
+    <ThemeProvider>
+      <div className="min-h-screen transition-colors duration-300">
+        {/* Sticky Navigation with Theme Toggle */}
+        <Navbar />
 
-      {/* Main Content Sections */}
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Education />
-        <Contact />
-      </main>
+        {/* Main Content Sections */}
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Education />
+          <Contact />
+        </main>
 
-      {/* Footer */}
-      <Footer />
-    </div>
+        {/* Footer */}
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

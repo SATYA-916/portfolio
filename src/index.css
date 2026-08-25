@@ -5,12 +5,47 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-family: 'Space Grotesk', sans-serif;
   }
 }
 
+/* Modern Theme Global Styles */
+.theme-modern {
+  font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #090d16;
+  color: #f1f5f9;
+}
+
+.theme-modern .modern-grid-bg {
+  background-image: 
+    radial-gradient(rgba(20, 184, 166, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(9, 13, 22, 0.95), #090d16);
+  background-size: 32px 32px, 100% 100%;
+}
+
+.theme-modern .modern-card {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-modern .modern-card:hover {
+  border-color: rgba(45, 212, 191, 0.35);
+  box-shadow: 0 12px 30px -10px rgba(20, 184, 166, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Retro Theme Global Styles */
+.theme-retro {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #080c14;
+  color: #f8fafc;
+}
+
 /* Subtle Retro CRT Scanlines Overlay */
-.retro-scanlines::before {
+.theme-retro .retro-scanlines::before {
   content: " ";
   display: block;
   position: fixed;
@@ -23,7 +58,7 @@
 }
 
 /* Retro CRT Vignette */
-.retro-scanlines::after {
+.theme-retro .retro-scanlines::after {
   content: " ";
   display: block;
   position: fixed;
@@ -34,42 +69,30 @@
 }
 
 /* Retro Synthwave Cyber Grid Background */
-.retro-grid-bg {
+.theme-retro .retro-grid-bg {
   background-color: #080c14;
   background-image: 
-    linear-gradient(rgba(0, 240, 255, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 240, 255, 0.07) 1px, transparent 1px);
+    linear-gradient(rgba(0, 240, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.08) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
-.retro-dot-bg {
+.theme-retro .retro-dot-bg {
   background-image: radial-gradient(rgba(255, 0, 127, 0.15) 1.5px, transparent 1.5px);
   background-size: 24px 24px;
 }
 
 /* Retro Window Frame */
-.retro-window {
+.theme-retro .retro-window {
   background: #0f1523;
   border: 2px solid #2a3652;
   box-shadow: 5px 5px 0px 0px rgba(0, 240, 255, 0.2), 5px 5px 0px 1px #000000;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.retro-window:hover {
+.theme-retro .retro-window:hover {
   border-color: #00f0ff;
   box-shadow: 6px 6px 0px 0px #00f0ff, 6px 6px 0px 1px #000000;
-  transform: translate(-2px, -2px);
-}
-
-.retro-window-pink:hover {
-  border-color: #ff007f;
-  box-shadow: 6px 6px 0px 0px #ff007f, 6px 6px 0px 1px #000000;
-  transform: translate(-2px, -2px);
-}
-
-.retro-window-yellow:hover {
-  border-color: #ffe600;
-  box-shadow: 6px 6px 0px 0px #ffe600, 6px 6px 0px 1px #000000;
   transform: translate(-2px, -2px);
 }
 
@@ -93,6 +116,7 @@
 .retro-btn-pink {
   border: 2px solid #000000;
   box-shadow: 3px 3px 0px 0px #ff007f;
+  transition: all 0.15s ease;
 }
 
 .retro-btn-pink:hover {
@@ -108,6 +132,7 @@
 .retro-btn-yellow {
   border: 2px solid #000000;
   box-shadow: 3px 3px 0px 0px #ffe600;
+  transition: all 0.15s ease;
 }
 
 .retro-btn-yellow:hover {
@@ -133,22 +158,35 @@
   text-shadow: 0 0 10px rgba(57, 255, 20, 0.7), 0 0 20px rgba(57, 255, 20, 0.4);
 }
 
-/* Custom 8-bit / arcade Scrollbar */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+.theme-retro ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.theme-retro ::-webkit-scrollbar-track {
   background: #080c14;
   border-left: 2px solid #1e293b;
 }
 
-::-webkit-scrollbar-thumb {
+.theme-retro ::-webkit-scrollbar-thumb {
   background: #00f0ff;
   border: 2px solid #000000;
   box-shadow: 2px 2px 0px #ff007f;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #ff007f;
 }
