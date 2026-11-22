@@ -83,7 +83,7 @@ function Hero() {
         <video
           className="absolute inset-0 h-full w-full object-cover"
           src="https://videos.pexels.com/video-files/3129671/3129671-hd_1920_1080_30fps.mp4"
-          poster="https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1800&auto=format&fit=crop"
+          poster="/art/vice-city.jpg"
           autoPlay
           muted
           loop
@@ -121,6 +121,13 @@ function Hero() {
             GitHub
           </a>
         </div>
+        <figure className="hero-character relative mx-auto mt-10 w-64 rotate-2 overflow-hidden rounded-lg border-4 border-black/70 shadow-[0_25px_60px_rgba(0,0,0,0.55)] sm:w-72 lg:absolute lg:right-5 lg:top-0 lg:mt-0 lg:w-60 xl:w-72">
+          <img src="/art/hero-character.jpg" alt="GTA style illustrated poster of Satya" className="block w-full" />
+          <figcaption className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-black/70 px-3 py-2 font-mono text-[11px] tracking-[0.25em] text-white">
+            <span>SATYA</span>
+            <span>EST. 2023</span>
+          </figcaption>
+        </figure>
         <div className="mt-12 grid max-w-3xl grid-cols-3 gap-2 md:grid-cols-9 md:gap-3" aria-label="Skill shards">
           {shards.map((s) => (
             <div
@@ -297,10 +304,26 @@ function Skills() {
   )
 }
 
+
+function CoverBand() {
+  return (
+    <section className="cover-band relative flex h-[52vh] items-center justify-center overflow-hidden">
+      <img src="/art/vice-city.jpg" alt="" className="cover-band-img absolute inset-0 h-[125%] w-full object-cover" />
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(13,2,23,0.45) 0%, rgba(13,2,23,0.05) 40%, rgba(13,2,23,0.55) 100%)' }} />
+      <div className="reveal relative px-5 text-center">
+        <h2 className="font-display text-4xl uppercase tracking-wide text-white [text-shadow:3px_3px_0_rgba(0,0,0,0.6)] md:text-6xl">Welcome to Vizag City</h2>
+        <p className="mt-3 font-mono text-xs tracking-[0.3em] text-white/90 md:text-sm">WHERE THE MISSIONS ARE REAL AND THE CODE SHIPS AT SUNSET</p>
+      </div>
+    </section>
+  )
+}
+
 function City() {
   return (
-    <section className="sunset-bg relative overflow-hidden py-28">
-      <div className="mx-auto max-w-6xl px-5 text-center">
+    <section className="relative overflow-hidden py-28">
+      <img src="/art/vizag-beach.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(13,2,23,0.62) 0%, rgba(13,2,23,0.25) 45%, rgba(13,2,23,0.66) 100%)' }} />
+      <div className="relative mx-auto max-w-6xl px-5 text-center">
         <p className="reveal font-mono text-xs tracking-[0.35em] text-vice-gold">HOME BASE</p>
         <h2 className="city-line mt-3 font-display uppercase leading-[0.95]">
           <span className="block text-[11vw] text-vice-sand md:text-8xl">Visakhapatnam</span>
@@ -377,6 +400,7 @@ export default function App() {
           ease: 'back.out(1.6)',
           delay: 0.35,
         })
+        gsap.from('.hero-character', { x: 120, opacity: 0, rotation: 10, duration: 1, delay: 0.8, ease: 'power3.out' })
         gsap.to('.hero-bg', {
           opacity: 0,
           scale: 1.12,
@@ -388,6 +412,11 @@ export default function App() {
           opacity: 0.25,
           ease: 'none',
           scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: true },
+        })
+        gsap.fromTo('.cover-band-img', { yPercent: -12 }, {
+          yPercent: 0,
+          ease: 'none',
+          scrollTrigger: { trigger: '.cover-band', start: 'top bottom', end: 'bottom top', scrub: true },
         })
         gsap.utils.toArray('.reveal').forEach((el) => {
           gsap.from(el, {
@@ -433,6 +462,7 @@ export default function App() {
       <main>
         <Hero />
         <Marquee />
+        <CoverBand />
         <About />
         <Experience />
         <Projects />
