@@ -93,7 +93,8 @@ function Hero() {
         <img className="hero-slide" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1800&auto=format&fit=crop" alt="" />
         <img className="hero-slide" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1800&auto=format&fit=crop" alt="" />
       </div>
-      <div className="sunset-bg horizon-lines absolute inset-0 opacity-80" aria-hidden="true" />
+      <div className="sunset-bg horizon-lines absolute inset-0 opacity-45" aria-hidden="true" />
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(13,2,23,0.25) 0%, rgba(13,2,23,0) 35%, rgba(13,2,23,0.55) 100%)' }} aria-hidden="true" />
       <div className="pointer-events-none absolute -bottom-24 left-1/2 h-72 w-[130%] -translate-x-1/2 rounded-[100%] bg-vice-hot/25 blur-3xl" />
       <div className="hero-inner relative mx-auto w-full max-w-6xl px-5">
         <p className="hero-line mb-4 flex flex-wrap items-center gap-3 font-mono text-xs tracking-[0.3em] text-vice-gold md:text-sm">
@@ -124,12 +125,10 @@ function Hero() {
           {shards.map((s) => (
             <div
               key={s.label}
-              className="shard relative flex aspect-[3/4] items-end overflow-hidden rounded-lg p-2 shadow-lg"
+              className="shard flex aspect-[3/4] items-end rounded-md border-2 border-black/50 p-2 shadow-[0_10px_30px_rgba(0,0,0,0.45)]"
               style={{ background: s.g }}
             >
-              <img src={s.img} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
-              <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(13,2,23,0.05) 40%, rgba(13,2,23,0.72) 100%)' }} />
-              <span className="relative font-display text-sm tracking-wider text-white drop-shadow md:text-base">{s.label}</span>
+              <span className="font-display text-base tracking-wide text-white [text-shadow:2px_2px_0_rgba(0,0,0,0.55)] md:text-lg">{s.label}</span>
             </div>
           ))}
         </div>
