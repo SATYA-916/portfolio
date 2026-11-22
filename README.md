@@ -3,7 +3,7 @@
 Cinematic portfolio inspired by the GTA VI promo page workflow from JavaScript
 Mastery, rebuilt with original CSS artwork and Satya's real content.
 
-Live site: (Vercel link added after deploy)
+Live site: https://portfolio-chi-puce-56.vercel.app/
 Code: https://github.com/SATYA-916/portfolio
 
 ## Stack
