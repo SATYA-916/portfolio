@@ -59,6 +59,7 @@ export const projects = [
     live: 'https://ai-interview-preparation-chi.vercel.app/',
     code: 'https://github.com/SATYA-916/AI_interview_preparation',
     gradient: 'linear-gradient(135deg,#7b2ff7 0%,#ff2e88 55%,#ff5e3a 100%)',
+    img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=900&auto=format&fit=crop'
   },
   {
     title: 'SLS Nexus',
@@ -68,6 +69,7 @@ export const projects = [
     live: 'https://www.slsnexus.com/',
     code: 'https://github.com/SATYA-916/SLS',
     gradient: 'linear-gradient(135deg,#21d4fd 0%,#7b2ff7 100%)',
+    img: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=900&auto=format&fit=crop'
   },
   {
     title: 'Real Time Collaborative Editor',
@@ -77,6 +79,7 @@ export const projects = [
     live: 'https://collab-real-19et.vercel.app/',
     code: 'https://github.com/SATYA-916/collab-real',
     gradient: 'linear-gradient(135deg,#ff5e3a 0%,#ffd23f 100%)',
+    img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=900&auto=format&fit=crop'
   },
   {
     title: 'PolicyNav',
@@ -86,6 +89,7 @@ export const projects = [
     live: 'https://github.com/SATYA-916/Public_Policy_Navigation_Using_AI',
     code: 'https://github.com/SATYA-916/Public_Policy_Navigation_Using_AI',
     gradient: 'linear-gradient(135deg,#11998e 0%,#21d4fd 100%)',
+    img: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=900&auto=format&fit=crop'
   },
   {
     title: 'QuizHub',
@@ -95,6 +99,7 @@ export const projects = [
     live: 'https://satya-916.github.io/quiz-platform/',
     code: 'https://github.com/SATYA-916/quiz-platform',
     gradient: 'linear-gradient(135deg,#ff2e88 0%,#7b2ff7 100%)',
+    img: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=900&auto=format&fit=crop'
   },
   {
     title: 'POTD, Daily DSA',
@@ -104,6 +109,7 @@ export const projects = [
     live: 'https://github.com/SATYA-916/POTD',
     code: 'https://github.com/SATYA-916/POTD',
     gradient: 'linear-gradient(135deg,#ffd23f 0%,#ff5e3a 100%)',
+    img: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=900&auto=format&fit=crop'
   },
   {
     title: 'Electricity Load Forecasting',
@@ -113,6 +119,7 @@ export const projects = [
     live: null,
     code: null,
     gradient: 'linear-gradient(135deg,#0f2027 0%,#2c5364 60%,#21d4fd 100%)',
+    img: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=900&auto=format&fit=crop'
   },
   {
     title: 'Rice Disease Detection',
@@ -122,6 +129,7 @@ export const projects = [
     live: null,
     code: null,
     gradient: 'linear-gradient(135deg,#134e5e 0%,#71b280 100%)',
+    img: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=900&auto=format&fit=crop'
   },
 ]
 
