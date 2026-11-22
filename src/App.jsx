@@ -6,15 +6,15 @@ import { profile, links, stats, experience, projects, services, skillGroups } fr
 gsap.registerPlugin(ScrollTrigger)
 
 const shards = [
-  { label: 'REACT', g: 'linear-gradient(135deg,#21d4fd,#7b2ff7)' },
-  { label: 'AI', g: 'linear-gradient(135deg,#ff2e88,#ff5e3a)' },
-  { label: 'NODE', g: 'linear-gradient(135deg,#11998e,#21d4fd)' },
-  { label: 'MERN', g: 'linear-gradient(135deg,#7b2ff7,#ff2e88)' },
-  { label: 'DSA', g: 'linear-gradient(135deg,#ffd23f,#ff5e3a)' },
-  { label: 'RAG', g: 'linear-gradient(135deg,#0f2027,#2c5364)' },
-  { label: 'UI', g: 'linear-gradient(135deg,#fc4a1a,#f7b733)' },
-  { label: 'APIs', g: 'linear-gradient(135deg,#8e2de2,#4a00e0)' },
-  { label: 'SHIP', g: 'linear-gradient(135deg,#ee0979,#ff6a00)' },
+  { label: 'REACT', g: 'linear-gradient(135deg,#21d4fd,#7b2ff7)' , img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=500&auto=format&fit=crop'},
+  { label: 'AI', g: 'linear-gradient(135deg,#ff2e88,#ff5e3a)' , img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=500&auto=format&fit=crop'},
+  { label: 'NODE', g: 'linear-gradient(135deg,#11998e,#21d4fd)' , img: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=500&auto=format&fit=crop'},
+  { label: 'MERN', g: 'linear-gradient(135deg,#7b2ff7,#ff2e88)' , img: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=500&auto=format&fit=crop'},
+  { label: 'DSA', g: 'linear-gradient(135deg,#ffd23f,#ff5e3a)' , img: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=500&auto=format&fit=crop'},
+  { label: 'RAG', g: 'linear-gradient(135deg,#0f2027,#2c5364)' , img: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=500&auto=format&fit=crop'},
+  { label: 'UI', g: 'linear-gradient(135deg,#fc4a1a,#f7b733)' , img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=500&auto=format&fit=crop'},
+  { label: 'APIs', g: 'linear-gradient(135deg,#8e2de2,#4a00e0)' , img: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=500&auto=format&fit=crop'},
+  { label: 'SHIP', g: 'linear-gradient(135deg,#ee0979,#ff6a00)' , img: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=500&auto=format&fit=crop'},
 ]
 
 function Loader({ done }) {
@@ -78,7 +78,13 @@ function Navbar() {
 
 function Hero() {
   return (
-    <section id="top" className="sunset-bg horizon-lines relative flex min-h-screen items-center overflow-hidden pt-24 pb-16">
+    <section id="top" className="relative flex min-h-screen items-center overflow-hidden pt-24 pb-16">
+      <div className="hero-bg absolute inset-0" aria-hidden="true">
+        <img className="hero-slide" src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1800&auto=format&fit=crop" alt="" />
+        <img className="hero-slide" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1800&auto=format&fit=crop" alt="" />
+        <img className="hero-slide" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1800&auto=format&fit=crop" alt="" />
+      </div>
+      <div className="sunset-bg horizon-lines absolute inset-0 opacity-80" aria-hidden="true" />
       <div className="pointer-events-none absolute -bottom-24 left-1/2 h-72 w-[130%] -translate-x-1/2 rounded-[100%] bg-vice-hot/25 blur-3xl" />
       <div className="hero-inner relative mx-auto w-full max-w-6xl px-5">
         <p className="hero-line mb-4 flex flex-wrap items-center gap-3 font-mono text-xs tracking-[0.3em] text-vice-gold md:text-sm">
@@ -109,10 +115,12 @@ function Hero() {
           {shards.map((s) => (
             <div
               key={s.label}
-              className="shard flex aspect-[3/4] items-end rounded-lg p-2 shadow-lg"
+              className="shard relative flex aspect-[3/4] items-end overflow-hidden rounded-lg p-2 shadow-lg"
               style={{ background: s.g }}
             >
-              <span className="font-display text-sm tracking-wider text-white drop-shadow md:text-base">{s.label}</span>
+              <img src={s.img} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+              <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(13,2,23,0.05) 40%, rgba(13,2,23,0.72) 100%)' }} />
+              <span className="relative font-display text-sm tracking-wider text-white drop-shadow md:text-base">{s.label}</span>
             </div>
           ))}
         </div>
@@ -219,8 +227,10 @@ function Projects() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p) => (
             <article key={p.title} className="reveal card-glow flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-vice-deep">
-              <div className="flex h-36 items-end p-5" style={{ background: p.gradient }}>
-                <span className="rounded-full bg-black/35 px-3 py-1 font-mono text-[11px] tracking-[0.2em] text-white">{p.tag.toUpperCase()}</span>
+              <div className="relative flex h-36 items-end overflow-hidden p-5" style={{ background: p.gradient }}>
+                {p.img && <img src={p.img} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />}
+                {p.img && <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(13,2,23,0.08) 30%, rgba(13,2,23,0.66) 100%)' }} />}
+                <span className="relative rounded-full bg-black/35 px-3 py-1 font-mono text-[11px] tracking-[0.2em] text-white">{p.tag.toUpperCase()}</span>
               </div>
               <div className="flex flex-1 flex-col p-6">
                 <h3 className="font-display text-2xl uppercase text-vice-sand">{p.title}</h3>
@@ -358,6 +368,12 @@ export default function App() {
           stagger: 0.07,
           ease: 'back.out(1.6)',
           delay: 0.35,
+        })
+        gsap.to('.hero-bg', {
+          opacity: 0,
+          scale: 1.12,
+          ease: 'none',
+          scrollTrigger: { trigger: '#top', start: 'top top', end: 'bottom top', scrub: true },
         })
         gsap.to('.hero-inner', {
           scale: 0.92,
