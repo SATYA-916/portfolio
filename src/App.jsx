@@ -80,6 +80,15 @@ function Hero() {
   return (
     <section id="top" className="relative flex min-h-screen items-center overflow-hidden pt-24 pb-16">
       <div className="hero-bg absolute inset-0" aria-hidden="true">
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          src="https://videos.pexels.com/video-files/3129671/3129671-hd_1920_1080_30fps.mp4"
+          poster="https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1800&auto=format&fit=crop"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
         <img className="hero-slide" src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1800&auto=format&fit=crop" alt="" />
         <img className="hero-slide" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1800&auto=format&fit=crop" alt="" />
         <img className="hero-slide" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1800&auto=format&fit=crop" alt="" />
